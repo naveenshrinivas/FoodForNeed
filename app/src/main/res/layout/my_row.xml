@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="200dp"
+    android:id="@+id/mainLayout">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp"
+         >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            >
+
+            <TextView
+                android:id="@+id/info_id_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:text="1"
+                android:textColor="#000"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:inputType="none"
+                android:focusableInTouchMode="false"
+                android:focusable="true"
+                android:enabled="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.111" />
+
+            <TextView
+                android:id="@+id/name_of_donor_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="Name 1"
+                android:inputType="none"
+                android:focusableInTouchMode="false"
+                android:focusable="true"
+                android:enabled="true"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/info_id_text"
+                app:layout_constraintTop_toTopOf="@+id/info_id_text" />
+
+            <TextView
+                android:id="@+id/location_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location 1"
+                app:layout_constraintStart_toStartOf="@+id/name_of_donor_txt"
+                app:layout_constraintTop_toBottomOf="@+id/name_of_donor_txt" />
+
+            <TextView
+                android:id="@+id/food_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Non Veg"
+                android:inputType="none"
+                android:focusableInTouchMode="false"
+                android:focusable="true"
+                android:enabled="true"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/phone_number_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:text="9841166535"
+                android:inputType="none"
+                android:focusableInTouchMode="false"
+                android:focusable="true"
+                android:enabled="true"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/food_txt" />
+
+            <TextView
+                android:id="@+id/dish_name_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:text="TextView"
+                android:inputType="none"
+                android:focusableInTouchMode="false"
+                android:focusable="true"
+                android:enabled="true"
+                app:layout_constraintBottom_toTopOf="@+id/phone_number_txt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/food_txt" />
+
+            <EditText
+                android:text="Hello I am Naveen"
+                android:background="@null"
+                android:id="@+id/comments_txt"
+                android:layout_width="308dp"
+                android:layout_height="61dp"
+                android:layout_marginStart="51dp"
+                android:layout_marginLeft="51dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="none"
+                android:focusableInTouchMode="false"
+                android:focusable="true"
+                android:enabled="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/info_id_text" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
